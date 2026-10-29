@@ -4,7 +4,7 @@ const CONFIG = {
   tagline: "Quality clothing at fair prices.",
   whatsapp: "919999999999",              // <-- put your WhatsApp number: 91 + 10 digits, no + or spaces
   email: "amansingh98821@gmail.com",
-  city: "Your City, India",              // <-- put your shop city/address
+  city: "new delhi, India",              // <-- put your shop city/address
   freeShipAbove: 1999,                   // free delivery above this amount
   shipCharge: 99
 };
