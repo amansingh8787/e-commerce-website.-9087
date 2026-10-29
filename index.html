@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Aftab Fashion Wear | Order on WhatsApp</title>
 <meta name="description" content="Aftab Fashion Wear: men, women and kids clothing. View products in 3D and order on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,57 +12,89 @@
 </head>
 <body>
 <header>
-  <div class="logo" id="logo"></div>
-  <button class="ib" id="theme" aria-label="Toggle theme">🌓</button>
+  <a class="logo" id="logo" href="#top"></a>
+  <nav><a href="#shop">Shop</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+  <button class="ib" id="theme" aria-label="Toggle dark or light theme">🌓</button>
   <button class="ib" id="wishBtn" aria-label="Wishlist">♡<span class="badge" id="wc">0</span></button>
-  <button class="ib" id="cartBtn" aria-label="Cart">🛍<span class="badge" id="cc">0</span></button>
+  <button class="ib" id="cartBtn" aria-label="Open cart">🛍<span class="badge" id="cc">0</span></button>
 </header>
 
-<section class="hero">
-  <div>
+<section class="hero" id="top">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="hero-txt">
+    <span class="pill">New season collection</span>
     <h1 id="heroTitle"></h1>
-    <p>Men, women aur kids ke kapde. Product ko <b>3D me ghuma kar dekho</b> aur order seedha <b>WhatsApp</b> pe karo.</p>
-    <a class="cta" href="#shop">Shop dekho</a>
+    <p>Fresh styles for men, women and kids. Spin any product around in <b>3D</b> and place your order directly on <b>WhatsApp</b>.</p>
+    <div class="hero-cta"><a class="cta" href="#shop">Shop now</a><a class="cta ghost" href="#how">How it works</a></div>
+    <ul class="feats"><li>🔄 3D product view</li><li>💬 Order on WhatsApp</li><li id="fShip">🚚 Free delivery</li></ul>
   </div>
-  <div class="art" aria-hidden="true">👕</div>
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 100 100"><path d="M30 12 L8 25 L20 42 L30 35 V90 H70 V35 L80 42 L92 25 L70 12 C66 21 34 21 30 12Z"/></svg>
+    <span class="chip-f c1">⭐ 4.7 rated</span><span class="chip-f c2">New arrivals</span>
+  </div>
 </section>
-<div class="perks" id="perks"></div>
 
-<div class="bar" id="shop">
-  <input id="q" type="search" placeholder="Search karo: tee, jeans, dress…" aria-label="Search">
-  <select id="sort" aria-label="Sort">
-    <option value="f">Featured</option><option value="lh">Price: low to high</option><option value="hl">Price: high to low</option><option value="r">Top rated</option>
-  </select>
+<section class="wrap" id="shop">
+  <div class="sec-head"><h2>Shop the collection</h2><p>Tap any product to view it in 3D.</p></div>
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search tees, jeans, dresses…" aria-label="Search products">
+    <select id="sort" aria-label="Sort products">
+      <option value="f">Featured</option><option value="lh">Price: low to high</option><option value="hl">Price: high to low</option><option value="r">Top rated</option>
+    </select>
+  </div>
   <div class="chips" id="chips"></div>
-</div>
-<main class="grid" id="grid"></main>
+  <main class="grid" id="grid"></main>
+</section>
+
+<section class="wrap" id="how">
+  <div class="sec-head"><h2>How it works</h2><p>Ordering takes less than a minute.</p></div>
+  <div class="steps">
+    <div class="step"><b>1</b><h3>Browse and view in 3D</h3><p>Pick a category, choose your size and rotate the product to see it from every side.</p></div>
+    <div class="step"><b>2</b><h3>Add to cart</h3><p>Add everything you like. Free delivery is applied automatically on bigger orders.</p></div>
+    <div class="step"><b>3</b><h3>Order on WhatsApp</h3><p>Enter your name and address. Your order message opens in WhatsApp, ready to send.</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="contact">
+  <div class="sec-head"><h2>Contact us</h2><p>Questions about sizes, prices or delivery? We are happy to help.</p></div>
+  <div class="contact-grid">
+    <a class="cbox" id="cMail"><span>✉️</span><h3>Email</h3><p id="cMailTxt"></p></a>
+    <a class="cbox" id="cWa" target="_blank" rel="noopener"><span>💬</span><h3>WhatsApp</h3><p>Chat and place orders</p></a>
+    <div class="cbox"><span>📍</span><h3>Location</h3><p id="cCity"></p></div>
+  </div>
+  <form class="cform" id="cForm">
+    <h3>Send us a message</h3>
+    <div class="two"><input id="fName" placeholder="Your name" required autocomplete="name"><input id="fMail" type="email" placeholder="Your email" required autocomplete="email"></div>
+    <textarea id="fMsg" rows="4" placeholder="How can we help?" required></textarea>
+    <button class="cta" type="submit">Send message</button>
+  </form>
+</section>
 
 <footer id="foot"></footer>
 <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
-
 <div id="shade"></div>
 
 <aside id="drawer" aria-label="Cart">
-  <h2>Aapka cart <button class="ib" id="closeCart" aria-label="Close">✕</button></h2>
+  <h2>Your cart <button class="ib" id="closeCart" aria-label="Close cart">✕</button></h2>
   <div id="items"></div>
   <div class="sum">
     <div class="free" id="free"></div>
     <div><span>Subtotal</span><b id="sub">₹0</b></div>
     <div><span>Delivery</span><b id="ship">₹0</b></div>
-    <div><span>Total</span><b id="tot">₹0</b></div>
-    <input id="cName" placeholder="Aapka naam" autocomplete="name">
-    <textarea id="cAddr" rows="2" placeholder="Poora address (pincode ke saath)" autocomplete="street-address"></textarea>
-    <button class="pay" id="pay">WhatsApp pe order karo</button>
+    <div class="tot"><span>Total</span><b id="tot">₹0</b></div>
+    <input id="cName" placeholder="Your name" autocomplete="name">
+    <textarea id="cAddr" rows="2" placeholder="Full delivery address with pincode" autocomplete="street-address"></textarea>
+    <button class="pay" id="pay">Order on WhatsApp</button>
   </div>
 </aside>
 
 <div id="viewer" aria-hidden="true">
   <div class="vbox">
     <div class="vtop"><b id="vTitle"></b><button class="ib" id="vClose" aria-label="Close 3D view">✕</button></div>
-    <div class="vcanvas"><canvas id="vc"></canvas><div class="vhint">Ghumane ke liye drag karo · zoom ke liye scroll ya pinch</div></div>
+    <div class="vcanvas"><canvas id="vc"></canvas><div class="vhint">Drag to rotate · scroll or pinch to zoom</div></div>
     <div class="vbar">
       <div><div class="price" id="vPrice"></div><div class="sizes" id="vSizes"></div></div>
-      <div class="vbtns"><button class="add" id="vAdd">Cart me daalo</button><button class="wa" id="vWa">WhatsApp pe order</button></div>
+      <div class="vbtns"><button class="add" id="vAdd">Add to cart</button><button class="wa" id="vWa">Order on WhatsApp</button></div>
     </div>
   </div>
 </div>
