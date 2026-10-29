@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aftab Fashion Wear | Order on WhatsApp</title>
+<meta name="description" content="Aftab Fashion Wear: men, women and kids clothing. View products in 3D and order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo" id="logo"></div>
+  <button class="ib" id="theme" aria-label="Toggle theme">🌓</button>
+  <button class="ib" id="wishBtn" aria-label="Wishlist">♡<span class="badge" id="wc">0</span></button>
+  <button class="ib" id="cartBtn" aria-label="Cart">🛍<span class="badge" id="cc">0</span></button>
+</header>
+
+<section class="hero">
+  <div>
+    <h1 id="heroTitle"></h1>
+    <p>Men, women aur kids ke kapde. Product ko <b>3D me ghuma kar dekho</b> aur order seedha <b>WhatsApp</b> pe karo.</p>
+    <a class="cta" href="#shop">Shop dekho</a>
+  </div>
+  <div class="art" aria-hidden="true">👕</div>
+</section>
+<div class="perks" id="perks"></div>
+
+<div class="bar" id="shop">
+  <input id="q" type="search" placeholder="Search karo: tee, jeans, dress…" aria-label="Search">
+  <select id="sort" aria-label="Sort">
+    <option value="f">Featured</option><option value="lh">Price: low to high</option><option value="hl">Price: high to low</option><option value="r">Top rated</option>
+  </select>
+  <div class="chips" id="chips"></div>
+</div>
+<main class="grid" id="grid"></main>
+
+<footer id="foot"></footer>
+<a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<div id="shade"></div>
+
+<aside id="drawer" aria-label="Cart">
+  <h2>Aapka cart <button class="ib" id="closeCart" aria-label="Close">✕</button></h2>
+  <div id="items"></div>
+  <div class="sum">
+    <div class="free" id="free"></div>
+    <div><span>Subtotal</span><b id="sub">₹0</b></div>
+    <div><span>Delivery</span><b id="ship">₹0</b></div>
+    <div><span>Total</span><b id="tot">₹0</b></div>
+    <input id="cName" placeholder="Aapka naam" autocomplete="name">
+    <textarea id="cAddr" rows="2" placeholder="Poora address (pincode ke saath)" autocomplete="street-address"></textarea>
+    <button class="pay" id="pay">WhatsApp pe order karo</button>
+  </div>
+</aside>
+
+<div id="viewer" aria-hidden="true">
+  <div class="vbox">
+    <div class="vtop"><b id="vTitle"></b><button class="ib" id="vClose" aria-label="Close 3D view">✕</button></div>
+    <div class="vcanvas"><canvas id="vc"></canvas><div class="vhint">Ghumane ke liye drag karo · zoom ke liye scroll ya pinch</div></div>
+    <div class="vbar">
+      <div><div class="price" id="vPrice"></div><div class="sizes" id="vSizes"></div></div>
+      <div class="vbtns"><button class="add" id="vAdd">Cart me daalo</button><button class="wa" id="vWa">WhatsApp pe order</button></div>
+    </div>
+  </div>
+</div>
+<div id="toast" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
