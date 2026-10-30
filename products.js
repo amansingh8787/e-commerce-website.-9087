@@ -2,11 +2,11 @@
 const CONFIG = {
   shopName: "Aftab Fashion Wear",
   tagline: "Quality clothing at fair prices.",
-  whatsapp: "919999999999",              // <-- put your WhatsApp number: 91 + 10 digits, no + or spaces
+  whatsapp: "",              // <-- put your WhatsApp number: 91 + 10 digits, no + or spaces
   email: "amansingh98821@gmail.com",
-  city: "new delhi, India",              // <-- put your shop city/address
-  freeShipAbove: 1999,                   // free delivery above this amount
-  shipCharge: 99
+  city: "New Delhi, India",              // <-- put your shop city/address
+  freeShipAbove: 499,                   // free delivery above this amount
+  shipCharge: 10
 };
 
 /* Sizes per category */
