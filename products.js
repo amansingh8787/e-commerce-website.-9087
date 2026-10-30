@@ -24,7 +24,7 @@ const SIZES = {
    img = front photo path, img2 = back photo path (optional)
    To add a photo: put it in the images/ folder and write img: "images/tee1.jpg"  */
 const PRODUCTS = [
-  { id: 1,  n: "Classic Cotton Tee",   c: "Men",         p: 599,  o: 899,  g: ["#f5b94a", "#e4572e"], r: 4.5, t: "Bestseller", img: "tee.png", img2: "" },
+  { id: 1,  n: "Classic Cotton Tee",   c: "Men",         p: 599,  o: 899,  g: ["#f5b94a", "#e4572e"], r: 4.5, t: "Bestseller", img: "tee.png", img2: "jeansw.png" },
   { id: 2,  n: "Slim Fit Denim Jeans", c: "Men",         p: 1799, o: 2499, g: ["#5b8cff", "#2c3e8c"], r: 4.4, t: "",           img: "slim.png", img2: "" },
   { id: 3,  n: "Oversized Hoodie",     c: "Men",         p: 1499, o: 1999, g: ["#8f7cff", "#3a2c8c"], r: 4.7, t: "New",        img: "hoddie.png", img2: "" },
   { id: 4,  n: "Floral Summer Dress",  c: "Women",       p: 1299, o: 1899, g: ["#ff9ab5", "#e4572e"], r: 4.6, t: "Trending",   img: "women.png", img2: "" },
