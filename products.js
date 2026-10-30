@@ -2,7 +2,7 @@
 const CONFIG = {
   shopName: "Aftab Fashion Wear",
   tagline: "Quality clothing at fair prices.",
-  whatsapp: "",              // <-- put your WhatsApp number: 91 + 10 digits, no + or spaces
+  whatsapp: "919999999999",              // <-- put your WhatsApp number: 91 + 10 digits, no + or spaces
   email: "amansingh98821@gmail.com",
   city: "New Delhi, India",              // <-- put your shop city/address
   freeShipAbove: 499,                   // free delivery above this amount
